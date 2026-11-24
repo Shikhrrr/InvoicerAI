@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+    font-family: 'Poppins', 'Plus Jakarta Sans', sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    @apply font-bold;
+  }
+
+  button, [role="button"] {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Thin dividers and consistent borders */
+  hr {
+    @apply border-slate-300 my-4;
+  }
+}
+
+/* Notebook Math Grid (white background with light grey squares) */
+.bg-notebook-grid {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+/* Large Notebook Grid */
+.bg-notebook-grid-dense {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.4) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Doodle Border Radii - organic hand-drawn shapes */
+.border-doodle {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.border-doodle-2 {
+  border-radius: 20px 255px 20px 255px / 255px 20px 255px 20px;
+}
+
+.border-doodle-pill {
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.border-doodle-sm {
+  border-radius: 120px 10px 100px 10px / 10px 100px 10px 120px;
+}
+
+/* Doodle Box Shadows - hard hand-drawn drop shadows */
+.shadow-doodle {
+  box-shadow: 3px 3px 0px #0f172a;
+}
+
+.shadow-doodle-lg {
+  box-shadow: 6px 6px 0px #0f172a;
+}
+
+.shadow-doodle-blue {
+  box-shadow: 4px 4px 0px #2563eb;
+}
+
+.shadow-doodle-red {
+  box-shadow: 4px 4px 0px #dc2626;
+}
+
+.shadow-doodle-hover {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.shadow-doodle-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #0f172a;
+}
+
+/* Washi Tape Strips */
+.washi-tape-yellow {
+  background: rgba(254, 240, 138, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(202, 138, 4, 0.4);
+  border-right: 2px dashed rgba(202, 138, 4, 0.4);
+}
+
+.washi-tape-blue {
+  background: rgba(191, 219, 254, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(37, 99, 235, 0.4);
+  border-right: 2px dashed rgba(37, 99, 235, 0.4);
+}
+
+.washi-tape-red {
+  background: rgba(254, 202, 202, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(220, 38, 38, 0.4);
+  border-right: 2px dashed rgba(220, 38, 38, 0.4);
+}
+
+/* Highlighter Pen Effects */
+.highlighter-yellow {
+  background: linear-gradient(104deg, rgba(254, 240, 138, 0) 0.9%, rgba(254, 240, 138, 0.85) 2.4%, rgba(254, 240, 138, 0.8) 90%, rgba(254, 240, 138, 0) 98%);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.highlighter-blue {
+  background: linear-gradient(104deg, rgba(191, 219, 254, 0) 0.9%, rgba(191, 219, 254, 0.85) 2.4%, rgba(191, 219, 254, 0.8) 90%, rgba(191, 219, 254, 0) 98%);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.highlighter-red {
+  background: linear-gradient(104deg, rgba(254, 202, 202, 0) 0.9%, rgba(254, 202, 202, 0.85) 2.4%, rgba(254, 202, 202, 0.8) 90%, rgba(254, 202, 202, 0) 98%);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1C8C0;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B2A59A;
+}
